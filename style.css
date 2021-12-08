@@ -24,6 +24,9 @@ body {
   width: 180px;
   border-radius: 50px;
   text-align: left;
+  position: absolute;
+  top: -30px;
+  left: 20px;
   background: #16181f;
 }
 
@@ -53,6 +56,7 @@ body {
 
 #headerButtons #O {
   border: 3.5px solid #ff730080;
+  left: 210px;
   color: #ff730080;
   font-weight: bolder;
 }
