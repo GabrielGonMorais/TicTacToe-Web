@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Neon 80s";
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #191b27;
+}
+
+#container {
+  height: auto;
+  width: auto;
+  padding: 30px;
+  position: relative;
+}
+
+#headerButtons button {
+  height: 60px;
+  width: 180px;
+  border-radius: 50px;
+  text-align: left;
+  background: #16181f;
+}
+
+#headerButtons #X {
+  font-weight: bolder;
+  border: 3.5px solid rgba(0, 255, 255, 0.363);
+  color: rgba(0, 255, 255, 0.473);
+}
+
+#headerButtons #X #charX {
+  font-size: 37px;
+  padding: 0px 70px 0px 25px;
+}
+
+#headerButtons #X #scoreX {
+  font-size: 35px;
+}
+
+.shiningX {
+  border: 3.5px solid rgba(0, 255, 255, 0.815) !important;
+  box-shadow: inset 0 0 1em 0 aqua, 0 0 2.5em 0 aqua !important;
+  color: rgba(0, 255, 255, 0.89) !important;
+  text-shadow: -1px -1px 10px rgb(0 150 0 / 10%),
+    1px -1px 10px rgb(0 150 0 / 10%), -1px 1px 10px rgb(0 150 0 / 10%),
+    1px 1px 10px rgb(0 150 0 / 10%);
+}
+
+#headerButtons #O {
+  border: 3.5px solid #ff730080;
+  color: #ff730080;
+  font-weight: bolder;
+}
+
+#headerButtons #O #charO {
+  font-size: 37px;
+  padding: 0px 70px 0px 25px;
+}
+
+#headerButtons #O #scoreO {
+  font-size: 35px;
+}
+
+.shiningO {
+  border: 3.5px solid #ff7300 !important;
+  box-shadow: inset 0 0 1em 0 #ff7300, 0 0 2.5em 0 #ff7300 !important;
+  color: #ff7300 !important;
+  text-shadow: -1px -1px 10px rgb(255 155 0 / 10%),
+    1px -1px 10px rgb(255 155 0 / 10%), -1px 1px 10px rgb(255 155 0 / 10%),
+    1px 1px 10px rgb(255 155 0 / 10%);
+}
+
+#gameBoard {
+  top: 150px;
+  left: 10px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+  grid-gap: 25px;
+}
+
+.boxes {
+  height: 112px;
+  width: 112px;
+  display: grid;
+  color: #211e3a00;
+  font-size: 50px;
+  border: 2px solid #211e3a;
+  background: #16181f;
+  border-radius: 10px;
+  place-items: center;
+  box-shadow: 1px 1px 1px rgb(255 255 255 / 9%), -2px -2px 5px rgb(0 0 0 / 90%),
+    0 0 4em 0 #39307c;
+  cursor: pointer;
+}
+
+.boxes:hover {
+  background-color: #222631;
+  transition: 0.4s;
+}
+
+.playerX {
+  color: aqua !important;
+}
+
+.playerO {
+  color: #ff7300 !important;
+}
+
+#bottomBtn {
+  text-align: center;
+}
+
+#restart {
+  height: 45px;
+  background: #16181f;
+  width: 120px;
+  border-radius: 50px;
+  font-size: 22px;
+
+  border: 2px solid #211e3a;
+  color: #00000044;
+  box-shadow: 1px 1px 1px rgb(255 255 255 / 9%), -2px -2px 5px rgb(0 0 0 / 90%);
+}
+
+.restartDraw {
+  border: 3.5px solid #ffffff !important;
+  box-shadow: inset 0 0 1em 0 #ffffff, 0 0 2.5em 0 #ffffff !important;
+  color: #ffffff !important;
+  text-shadow: -1px -1px 10px rgb(255 155 0 / 10%),
+    1px -1px 10px rgb(255 155 0 / 10%), -1px 1px 10px rgb(255 155 0 / 10%),
+    1px 1px 10px rgb(255 155 0 / 10%);
+}
+
+.cursorPoint {
+  cursor: pointer !important;
+}

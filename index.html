@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="headerButtons">
+        <button id="X">
+          <span id="charX">X</span>
+          <span id="scoreX">0</span>
+        </button>
+        <button id="O">
+          <span id="charO">O</span>
+          <span id="scoreO">0</span>
+        </button>
+      </div>
+      <br /><br /><br />
+      <div id="gameBoard">
+        <div class="boxes" id="btn7" onclick="Events(6)"></div>
+        <div class="boxes" id="btn8" onclick="Events(7)"></div>
+        <div class="boxes" id="btn9" onclick="Events(8)"></div>
+        <div class="boxes" id="btn4" onclick="Events(3)"></div>
+        <div class="boxes" id="btn5" onclick="Events(4)"></div>
+        <div class="boxes" id="btn6" onclick="Events(5)"></div>
+        <div class="boxes" id="btn1" onclick="Events(0)"></div>
+        <div class="boxes" id="btn2" onclick="Events(1)"></div>
+        <div class="boxes" id="btn3" onclick="Events(2)"></div>
+      </div>
+      <br /><br />
+      <div id="bottomBtn">
+        <button id="restart" onclick="ResetGame()">Restart</button>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
